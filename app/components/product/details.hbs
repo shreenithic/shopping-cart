@@ -1,0 +1,17 @@
+ <div class="product-details">
+    {{!--header--}}
+    <section>
+        <h3>{{@name}}</h3>
+        <small class={{if @isAvailable "text-success" "text-danger"}}>
+            {{if @isAvailable "available" "unavailable"}}
+        </small>
+    
+
+    </section>
+    {{!--price--}}
+    <section>
+       <p class="fw-bolder">${{@price}}</p>
+    </section>
+ </div>
+
+{{yield}}
