@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-end mb-5">
+    <label>
+        <input type="checkbox" checked={{@isChecked}} {{on "change" this.toggleAvailability}} /> Show only available
+        products
+    </label>
+
+</div>
+
+{{yield}}

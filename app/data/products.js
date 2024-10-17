@@ -32,7 +32,7 @@ export const products = [
       'Machine washable for easy care',
     ],
     image: '/assets/images/jean.jpg',
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: '3',
@@ -50,7 +50,7 @@ export const products = [
       'Up to 19 hours of video playback',
     ],
     image: '/assets/images/iphone.jpg',
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: '4',

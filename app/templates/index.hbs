@@ -1,12 +1,16 @@
 {{page-title "Index"}}
 
 <GeneralContainer>
-    <SearchBar />
-    {{#each this.model as |product|}}
+
+    <SearchBar @searchText={{this.searchText}} @onSearch={{this.updateSearchText}} />
+
+    <CheckBox @isChecked={{this.showAvailableOnly}} @onToggle={{this.toggleAvailability}} />
+
+
+    {{#each this.filteredProducts as |product|}}
      <Product @product={{product}}/>
     {{/each}}
-    {{!-- <Product />
-    <Product /> --}}
+   
 </GeneralContainer>
 
 
