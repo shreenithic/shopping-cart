@@ -5,6 +5,6 @@ export default class CheckBoxComponent extends Component {
   @action
   toggleAvailability(event) {
     const isChecked = event.target.checked;
-    this.args.onToggle(isChecked); 
+    this.args.onToggle(isChecked);
   }
 }

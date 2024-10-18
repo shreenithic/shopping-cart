@@ -1,4 +1,17 @@
 {{page-title "ShoppingCart"}}
 
+<nav class="navbar navbar-light bg-light">
+
+    <LinkTo @route="index" class="navbar-brand nav-link px-3">Shopping App</LinkTo>
+    
+    <div class="px-3">
+      {{#if this.session.isAuthenticated}}
+        <button {{on "click" this.logout}} class="btn btn-outline-danger">Logout</button>
+      {{else}}
+        <LinkTo @route="login" class="btn btn-outline-primary">Login</LinkTo>
+      {{/if}}
+    </div>
+
+</nav>
 
 {{outlet}}
